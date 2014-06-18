@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Upload</title>
+    <style>
+        .cropper {
+            position: relative;
+            cursor: crosshair;
+            margin:10px 0;
+        }
+        .cropper-area-handle {
+            width: 6px;
+            height: 6px;
+            background: yellow;
+        }
+        .cropper-overlay {
+            background: black;
+            opacity: 0.5;
+            filter: alpha(opacity = 50);
+        }
+
+        /* other style */
+        * {margin:0;padding:0;}
+        .elastic {margin: 50px auto;width:960px;}
+        #drop-zone {width:200px;height:100px;border:2px dashed #000;text-align: center;line-height:100px;margin-bottom:10px;}
+        #uploaded-files img {max-width:300px;display:block;margin:10px 0;}
+        #save-imgs {padding:5px 7px;background:#d6d6d6;color:#000;text-decoration: none}
+    </style>
+</head>
+<body>
+
+    <div class="elastic">
+        <div id="drop-zone">Drop Images Here</div>
+        <output id="uploaded-files"></output>
+    </div>
+
+    <!-- script tags -->
+    <script src="assets/js/vendor/cropper/cropper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
